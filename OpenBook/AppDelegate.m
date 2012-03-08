@@ -13,7 +13,6 @@
 
 @implementation AppDelegate
 
-@synthesize splashImage;
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
@@ -26,24 +25,30 @@
     [self.window makeKeyAndVisible];
     
     
-    // Add the image to the forefront...
-    splashImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    //add the image to the forefront...
+    UIImageView *splashImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
     [splashImage setImage: [UIImage imageNamed:@"Default"]];
     [self.window addSubview:splashImage];
     [self.window bringSubviewToFront:splashImage];
     
-    self.splashImage.layer.anchorPoint = CGPointMake(0, 0.5);
-    self.splashImage.frame = CGRectMake(0, 0, 320, 480);
     
+    //set an anchor point on the image view so it opens from the left
+    splashImage.layer.anchorPoint = CGPointMake(0, 0.5);
+    
+    //reset the image view frame
+    splashImage.frame = CGRectMake(0, 0, 320, 480);
+    
+    //animate the open
     [UIView animateWithDuration:1.0
                           delay:0.6
                         options:(UIViewAnimationCurveEaseOut) 
                      animations:^{
                          
-                         self.splashImage.layer.transform = CATransform3DRotate(CATransform3DIdentity, -M_PI_2, 0, 1, 0);
+                         splashImage.layer.transform = CATransform3DRotate(CATransform3DIdentity, -M_PI_2, 0, 1, 0);
                      } completion:^(BOOL finished){
-                         // completion code
-                         [self.splashImage removeFromSuperview];
+                         
+                         //remove that imageview from the view
+                         [splashImage removeFromSuperview];
                      }];
     
     return YES;

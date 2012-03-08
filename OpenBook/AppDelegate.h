@@ -12,12 +12,9 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
     
     
-    UIImageView     *splashImage;
     
     
 }
-
-@property (nonatomic, retain) UIImageView *splashImage;
 
 @property (strong, nonatomic) UIWindow *window;
 
