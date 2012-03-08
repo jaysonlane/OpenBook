@@ -3,15 +3,17 @@
 //  OpenBook
 //
 //  Created by Jayson Lane on 3/8/12.
-//  Copyright (c) 2012 Sparq Media. All rights reserved.
 //
 
 #import "AppDelegate.h"
 
 #import "ViewController.h"
 
+#import <QuartzCore/QuartzCore.h>
+
 @implementation AppDelegate
 
+@synthesize splashImage;
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
@@ -22,7 +24,30 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    
+    // Add the image to the forefront...
+    splashImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 480)];
+    [splashImage setImage: [UIImage imageNamed:@"Default"]];
+    [self.window addSubview:splashImage];
+    [self.window bringSubviewToFront:splashImage];
+    
+    self.splashImage.layer.anchorPoint = CGPointMake(0, 0.5);
+    self.splashImage.frame = CGRectMake(0, 0, 320, 480);
+    
+    [UIView animateWithDuration:1.0
+                          delay:0.6
+                        options:(UIViewAnimationCurveEaseOut) 
+                     animations:^{
+                         
+                         self.splashImage.layer.transform = CATransform3DRotate(CATransform3DIdentity, -M_PI_2, 0, 1, 0);
+                     } completion:^(BOOL finished){
+                         // completion code
+                         [self.splashImage removeFromSuperview];
+                     }];
+    
     return YES;
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
