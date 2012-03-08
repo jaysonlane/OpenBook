@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D55693021509354600ED95EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55693011509354600ED95EE /* UIKit.framework */; };
+		D55693041509354600ED95EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55693031509354600ED95EE /* Foundation.framework */; };
+		D55693061509354600ED95EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55693051509354600ED95EE /* CoreGraphics.framework */; };
+		D556930C1509354600ED95EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D556930A1509354600ED95EE /* InfoPlist.strings */; };
+		D556930E1509354600ED95EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D556930D1509354600ED95EE /* main.m */; };
+		D55693121509354600ED95EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D55693111509354600ED95EE /* AppDelegate.m */; };
+		D55693151509354600ED95EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D55693141509354600ED95EE /* ViewController.m */; };
+		D55693181509354600ED95EE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D55693161509354600ED95EE /* ViewController.xib */; };
+		D55693201509354600ED95EE /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D556931F1509354600ED95EE /* SenTestingKit.framework */; };
+		D55693211509354600ED95EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55693011509354600ED95EE /* UIKit.framework */; };
+		D55693221509354600ED95EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55693031509354600ED95EE /* Foundation.framework */; };
+		D556932A1509354600ED95EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D55693281509354600ED95EE /* InfoPlist.strings */; };
+		D556932D1509354600ED95EE /* OpenBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D556932C1509354600ED95EE /* OpenBookTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D55693231509354600ED95EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D55692F41509354500ED95EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D55692FC1509354600ED95EE;
+			remoteInfo = OpenBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D55692FD1509354600ED95EE /* OpenBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55693011509354600ED95EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D55693031509354600ED95EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D55693051509354600ED95EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D55693091509354600ED95EE /* OpenBook-Info.plist */ = {isa = PBXFileReference; path = "OpenBook-Info.plist"; sourceTree = "<group>"; };
+		D556930B1509354600ED95EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D556930D1509354600ED95EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D556930F1509354600ED95EE /* OpenBook-Prefix.pch */ = {isa = PBXFileReference; path = "OpenBook-Prefix.pch"; sourceTree = "<group>"; };
+		D55693101509354600ED95EE /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D55693111509354600ED95EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D55693131509354600ED95EE /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		D55693141509354600ED95EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D55693171509354600ED95EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		D556931E1509354600ED95EE /* OpenBookTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBookTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D556931F1509354600ED95EE /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D55693271509354600ED95EE /* OpenBookTests-Info.plist */ = {isa = PBXFileReference; path = "OpenBookTests-Info.plist"; sourceTree = "<group>"; };
+		D55693291509354600ED95EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D556932B1509354600ED95EE /* OpenBookTests.h */ = {isa = PBXFileReference; path = OpenBookTests.h; sourceTree = "<group>"; };
+		D556932C1509354600ED95EE /* OpenBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenBookTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D55692FA1509354600ED95EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55693021509354600ED95EE /* UIKit.framework in Frameworks */,
+				D55693041509354600ED95EE /* Foundation.framework in Frameworks */,
+				D55693061509354600ED95EE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D556931A1509354600ED95EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D55693201509354600ED95EE /* SenTestingKit.framework in Frameworks */,
+				D55693211509354600ED95EE /* UIKit.framework in Frameworks */,
+				D55693221509354600ED95EE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D55692F21509354500ED95EE = {
+			isa = PBXGroup;
+			children = (
+				D55693071509354600ED95EE /* OpenBook */,
+				D55693251509354600ED95EE /* OpenBookTests */,
+				D55693001509354600ED95EE /* Frameworks */,
+				D55692FE1509354600ED95EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D55692FE1509354600ED95EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D55692FD1509354600ED95EE /* OpenBook.app */,
+				D556931E1509354600ED95EE /* OpenBookTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D55693001509354600ED95EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D55693011509354600ED95EE /* UIKit.framework */,
+				D55693031509354600ED95EE /* Foundation.framework */,
+				D55693051509354600ED95EE /* CoreGraphics.framework */,
+				D556931F1509354600ED95EE /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D55693071509354600ED95EE /* OpenBook */ = {
+			isa = PBXGroup;
+			children = (
+				D55693101509354600ED95EE /* AppDelegate.h */,
+				D55693111509354600ED95EE /* AppDelegate.m */,
+				D55693131509354600ED95EE /* ViewController.h */,
+				D55693141509354600ED95EE /* ViewController.m */,
+				D55693161509354600ED95EE /* ViewController.xib */,
+				D55693081509354600ED95EE /* Supporting Files */,
+			);
+			path = OpenBook;
+			sourceTree = "<group>";
+		};
+		D55693081509354600ED95EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D55693091509354600ED95EE /* OpenBook-Info.plist */,
+				D556930A1509354600ED95EE /* InfoPlist.strings */,
+				D556930D1509354600ED95EE /* main.m */,
+				D556930F1509354600ED95EE /* OpenBook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D55693251509354600ED95EE /* OpenBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				D556932B1509354600ED95EE /* OpenBookTests.h */,
+				D556932C1509354600ED95EE /* OpenBookTests.m */,
+				D55693261509354600ED95EE /* Supporting Files */,
+			);
+			path = OpenBookTests;
+			sourceTree = "<group>";
+		};
+		D55693261509354600ED95EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D55693271509354600ED95EE /* OpenBookTests-Info.plist */,
+				D55693281509354600ED95EE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D55692FC1509354600ED95EE /* OpenBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55693301509354600ED95EE /* Build configuration list for PBXNativeTarget "OpenBook" */;
+			buildPhases = (
+				D55692F91509354600ED95EE /* Sources */,
+				D55692FA1509354600ED95EE /* Frameworks */,
+				D55692FB1509354600ED95EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenBook;
+			productName = OpenBook;
+			productReference = D55692FD1509354600ED95EE /* OpenBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D556931D1509354600ED95EE /* OpenBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D55693331509354600ED95EE /* Build configuration list for PBXNativeTarget "OpenBookTests" */;
+			buildPhases = (
+				D55693191509354600ED95EE /* Sources */,
+				D556931A1509354600ED95EE /* Frameworks */,
+				D556931B1509354600ED95EE /* Resources */,
+				D556931C1509354600ED95EE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D55693241509354600ED95EE /* PBXTargetDependency */,
+			);
+			name = OpenBookTests;
+			productName = OpenBookTests;
+			productReference = D556931E1509354600ED95EE /* OpenBookTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D55692F41509354500ED95EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Sparq Media";
+			};
+			buildConfigurationList = D55692F71509354500ED95EE /* Build configuration list for PBXProject "OpenBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D55692F21509354500ED95EE;
+			productRefGroup = D55692FE1509354600ED95EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D55692FC1509354600ED95EE /* OpenBook */,
+				D556931D1509354600ED95EE /* OpenBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D55692FB1509354600ED95EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D556930C1509354600ED95EE /* InfoPlist.strings in Resources */,
+				D55693181509354600ED95EE /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D556931B1509354600ED95EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D556932A1509354600ED95EE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D556931C1509354600ED95EE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D55692F91509354600ED95EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D556930E1509354600ED95EE /* main.m in Sources */,
+				D55693121509354600ED95EE /* AppDelegate.m in Sources */,
+				D55693151509354600ED95EE /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D55693191509354600ED95EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D556932D1509354600ED95EE /* OpenBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D55693241509354600ED95EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D55692FC1509354600ED95EE /* OpenBook */;
+			targetProxy = D55693231509354600ED95EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D556930A1509354600ED95EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D556930B1509354600ED95EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D55693161509354600ED95EE /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D55693171509354600ED95EE /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+		D55693281509354600ED95EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D55693291509354600ED95EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D556932E1509354600ED95EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D556932F1509354600ED95EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D55693311509354600ED95EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenBook/OpenBook-Prefix.pch";
+				INFOPLIST_FILE = "OpenBook/OpenBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D55693321509354600ED95EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenBook/OpenBook-Prefix.pch";
+				INFOPLIST_FILE = "OpenBook/OpenBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D55693341509354600ED95EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenBook.app/OpenBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenBook/OpenBook-Prefix.pch";
+				INFOPLIST_FILE = "OpenBookTests/OpenBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D55693351509354600ED95EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenBook.app/OpenBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OpenBook/OpenBook-Prefix.pch";
+				INFOPLIST_FILE = "OpenBookTests/OpenBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D55692F71509354500ED95EE /* Build configuration list for PBXProject "OpenBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D556932E1509354600ED95EE /* Debug */,
+				D556932F1509354600ED95EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D55693301509354600ED95EE /* Build configuration list for PBXNativeTarget "OpenBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55693311509354600ED95EE /* Debug */,
+				D55693321509354600ED95EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D55693331509354600ED95EE /* Build configuration list for PBXNativeTarget "OpenBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D55693341509354600ED95EE /* Debug */,
+				D55693351509354600ED95EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D55692F41509354500ED95EE /* Project object */;
+}
